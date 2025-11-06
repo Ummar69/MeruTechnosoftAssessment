@@ -2,7 +2,6 @@ QA Automation Assignment – Login Functionality (Selenium Java)
 
 This project automates the login feature of a sample web application using Selenium WebDriver, Java, and TestNG. All instructions below are written as clear, manual steps — follow them one by one.
 
-
 ---
 
 1. Objective (what you are submitting)
@@ -21,7 +20,6 @@ Logout functionality
 
 
 The automation is written in Java using Selenium WebDriver and TestNG and follows Page Object Model (POM).
-
 
 ---
 
@@ -78,9 +76,6 @@ chrome://settings/help
 Note the major version number (example: 119, 120).
 
 
-
-
-
 ---
 
 3. Download ChromeDriver (exact steps)
@@ -88,8 +83,6 @@ Note the major version number (example: 119, 120).
 1. Open your browser and search: ChromeDriver download or go directly to:
 
 https://chromedriver.chromium.org/downloads
-
-
 
 2. Find the ChromeDriver version that matches the major version of your Chrome (the number from chrome://settings/help).
 
@@ -115,34 +108,9 @@ C:\Drivers\chromedriver.exe --version
 
 It should print the ChromeDriver version.
 
-
-
-
 ---
 
-4. Project files (where things are located in this repo)
-
-Project root: qa-automation-assignment/
-
-Important files and folders (exact layout):
-
-qa-automation-assignment/
-├── pom.xml
-├── README.md
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/qa/pages/LoginPage.java
-│   └── test/
-│       └── java/
-│           └── com/qa/tests/LoginTest.java
-└── test-output/       (generated after running tests)
-    └── index.html
-
-
----
-
-5. Check & update pom.xml (do this exactly)
+4. Check & update pom.xml (do this exactly)
 
 1. Open pom.xml in the project root.
 
@@ -174,13 +142,8 @@ Or run in terminal from project root:
 
 mvn clean install
 
-
-
-
-
 ---
-
-6. Set ChromeDriver path in your code (do this exactly)
+5. Set ChromeDriver path in your code (do this exactly)
 
 1. Open your base test class file (example BaseTest.java) in:
 
@@ -207,12 +170,9 @@ WebDriver driver = new ChromeDriver();
 
 3. Save the file.
 
-
-
-
 ---
 
-7. Verify project compiles (do this next)
+6. Verify project compiles (do this next)
 
 1. In IDE: Right-click the project → Run As → Maven build...
 
@@ -235,14 +195,9 @@ Most common issues: wrong package name, missing imports, or chromedriver path no
 
 Fix the code or the path and repeat mvn clean test.
 
-
-
-
-
 ---
 
-8. How to run tests (two ways — do both to confirm)
-
+7. How to run tests 
 Option A — Run as TestNG from IDE (recommended step-by-step)
 
 1. In Project Explorer, open: src/test/java/com/qa/tests/LoginTest.java.
@@ -261,24 +216,9 @@ Option A — Run as TestNG from IDE (recommended step-by-step)
 
 
 
-Option B — Run with Maven from terminal
-
-1. Open terminal in project root.
-
-
-2. Run:
-
-mvn test
-
-
-3. Maven will run TestNG tests. Observe output in terminal.
-
-
-
-
 ---
 
-9. View results and test report (exact steps)
+8. View results and test report (exact steps)
 
 1. After tests finish, open the test-output folder in project root.
 
@@ -290,12 +230,9 @@ test-output/index.html
 
 3. The HTML report shows which tests passed and failed and stack traces for failures.
 
-
-
-
 ---
 
-10. Exact test data used (copy into your submission if required)
+9. Exact test data used (copy into your submission if required)
 
 Valid username: student
 
@@ -307,7 +244,7 @@ Application URL: https://practicetestautomation.com/practice-test-login/
 
 ---
 
-11. Troubleshooting — exact fixes for common errors
+10. Troubleshooting — exact fixes for common errors
 
 1. Browser not opening / SessionNotCreatedException
 
@@ -343,56 +280,16 @@ Cause: Page changed or locator is wrong.
 
 Fix: Open the website in Chrome, inspect element, update locator in LoginPage.java to the correct id, name, cssSelector, or xpath.
 
-
-
-
-
 ---
 
-12. What to submit (exact list)
-
-Zip the entire project folder qa-automation-assignment/ containing:
-
-pom.xml
-
-README.md (this file)
-
-src/ folder with pages and tests
-
-test-output/ (optional)
-
-
-Then upload ZIP or push to GitHub and share the repository link.
-
-
----
-
-13. Assignment author / contact (for submission)
+11. Assignment author / contact (for submission)
 
 Name: P. Ummar Farooq Role: QA Automation Trainee
 
 
 ---
 
-14. Final notes (one final check list to tick before submission)
-
-[ ] All 5 test methods exist and are in LoginTest.java
-
-[ ] LoginPage.java contains locators + methods (POM)
-
-[ ] BaseTest.java or setup code contains System.setProperty for ChromeDriver
-
-[ ] pom.xml contains selenium-java and testng dependencies
-
-[ ] Project builds with mvn clean test
-
-[ ] test-output/index.html displays the report
-
-[ ] README.md (this file) included in root
-
-[ ] Project zipped or pushed to GitHub
 
 
 
----
 
